@@ -4,3 +4,10 @@ The objective of this first project was to verify the MicroPython environment se
 
 ### 💡 Key Engineering Takeaway
 * **The "LED" String:** Unlike the original Raspberry Pi Pico (which maps the onboard LED to physical GPIO 25), the **Pico 2 W** routes its onboard LED through the wireless chip. Because of this architecture, we must initialize the pin using the string identifier `"LED"` instead of an integer index: `Pin("LED", Pin.OUT)`.
+
+### 📹 Demonstration
+<img width="640" height="480" alt="IMG_9261" src="https://github.com/user-attachments/assets/be4bb90a-efd5-4135-92f8-15633a90b689" />
+
+
+
+
