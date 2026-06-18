@@ -8,3 +8,10 @@ This repository serves as a hands-on laboratory journal for my embedded systems 
 * **Microcontroller:** Raspberry Pi Pico 2 W (RP2350 ARM Cortex-M33 / Hazard3 RISC-V)
 * **Development Environment:** Thonny IDE
 * **Language:** MicroPython
+
+## 📂 Project Index
+* 📁 **[01_internal_blink](./01_internal_blink)** - Learning basic syntax and flashing the onboard LED.
+* 📁 **[02_external_blink](./02_external_blink)** - Controlling external breadboard components using GPIO pins and current-limiting resistors.
+
+---
+*Documented as part of my practical electrical engineering logs.*
