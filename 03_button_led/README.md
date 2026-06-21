@@ -1,6 +1,6 @@
 # 02 - Button enabled LED
 
-This project implements a **Pull-Up resistor configuration** paired with **inverted software logic** to control an external LED:
+This project implements a **Pull-Up resistor** paired with **inverted logic** to control an external LED:
 
 * **Hardware Stabilization:** Two 10kΩ resistor is utilized to ensure no false readings to Pin 13. This prevents the pin from "floating" and ensures a reliable **HIGH** state when the mechanical button is open.
 * **Inverted Software Logic:** The MicroPython script is structured so that the LED is active-low:
