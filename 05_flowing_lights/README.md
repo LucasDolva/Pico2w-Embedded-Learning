@@ -4,7 +4,7 @@ Setting up 10 LEDs utelizing Pin 16 through 28 on the Pico, the point was to get
 
 
 ## 💡 Key Takeaway
-* ##For-loop Pin setup## Using For loops to setup multiple Pins so that we can put them inn an array and control them individually through another loop 
+* **For-loop Pin setup** Using For loops to setup multiple Pins so that we can put them inn an array and control them individually through another loop 
 
 
 ## 📹 Demonstration
