@@ -4,11 +4,11 @@ from machine import Pin
 from neopixel import myNeopixel
 
 # Create a strip of 10 NeoPixels on Pin 16
-strip = myNeopixel(num_leds=10, pin=16)
+strip = myNeopixel(num_leds=8, pin=16)
 strip.brightness(50) # Set it to a safe, comfortable brightness
 
 while True:
-    for i in range(10):
+    for i in range(8):
         strip.fill(0, 0, 0)       # Turn all pixels off
         
         # Generate a totally random RGB mix for this step
