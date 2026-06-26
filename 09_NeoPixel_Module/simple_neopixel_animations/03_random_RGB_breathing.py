@@ -3,7 +3,7 @@ import time
 from machine import Pin
 from neopixel import myNeopixel
 
-strip = myNeopixel(num_leds=10, pin=16)
+strip = myNeopixel(num_leds=8, pin=16)
 
 while True:
     # Pick a random color for this breath
