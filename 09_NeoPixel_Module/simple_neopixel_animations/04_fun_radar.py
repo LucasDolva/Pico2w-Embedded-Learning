@@ -3,7 +3,7 @@ import time
 from machine import Pin
 from neopixel import myNeopixel
 
-strip = myNeopixel(num_leds=10, pin=16)
+strip = myNeopixel(num_leds=8, pin=16)
 strip.brightness(50) # setting baseline brightness down
 
 while True:
@@ -12,12 +12,12 @@ while True:
     sweep = 1
     while sweep <= 3:
         # the internal logic for the radar sweep animation
-        for pixel in range(10):
+        for pixel in range(8):
             strip.fill(0, 0, 0)
             
             # Calculate trailing pixels behind the head
-            trail_1 = (pixel - 1) % 10
-            trail_2 = (pixel - 2) % 10
+            trail_1 = (pixel - 1) % 8
+            trail_2 = (pixel - 2) % 8
             
             # Draw the trailing radar beam (Sonar Green)
             strip.set_pixel(trail_2, 0, 20, 0)   # Faint green afterglow
@@ -29,7 +29,7 @@ while True:
         sweep+=1
     
     #warning sweep
-    for pixel in range(10):
+    for pixel in range(8):
         strip.fill(0,0,0)
         strip.set_pixel(pixel,200,70,0)
         strip.show()
@@ -43,3 +43,4 @@ while True:
         strip.fill(150,0,0)
         strip.show()
         time.sleep_ms(100) # delay between red and dark
+
