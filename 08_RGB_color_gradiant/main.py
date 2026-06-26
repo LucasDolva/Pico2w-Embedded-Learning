@@ -1,5 +1,4 @@
 from machine import Pin, PWM
-from random import randint
 import time
 
 #       R    G   B  based on physical implementation on the breadboard
