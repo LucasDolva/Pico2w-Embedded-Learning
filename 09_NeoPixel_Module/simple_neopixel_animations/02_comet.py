@@ -10,8 +10,8 @@ while True:
         strip.fill(0, 0, 0) # Clear the ring
         
         # Calculate the positions behind the comet (i)
-        tail_medium = (i - 1) % 10
-        tail_dim = (i - 2) % 10
+        tail_medium = (i - 1) % 10  # -1 mod 10 = 9 
+        tail_dim = (i - 2) % 10  # -2 mod 10 = 8 and so on
         
         # Draw the comet from tail to head
         strip.set_pixel(tail_dim, 0, 20, 50)       # Dim Blue tail
